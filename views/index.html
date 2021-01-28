@@ -16,9 +16,9 @@
     <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
-        <a class="navbar-brand" id="home-button">Home</a>
-        <div class="navbar-nav">
-          <a class="nav-link" id="edit-button">Edit Profile</a>
+        <div style="flex: 1">
+          <a class="navbar-brand" id="home-button">Home</a>
+          <a class="navbar-brand" id="edit-button">Edit Profile</a>
         </div>
       </div>
     </nav>
@@ -28,22 +28,46 @@
         <div class="container">
           <!-- USER PAGE -->
           <div id="user-page">
-            <div id="tree" style="text-align: center;">
+            <div id="tree" style="text-align: center">
               <h3>Sam's Tree</h3>
               <div class="row">
-                <div class="_col col-md-4" data-toggle="popover" data-trigger="click" data-placement="right" data-content=""><div class="card">Hannah (sister)</div></div>
-                <div class="_col col-md-4"><div class="card"><strong>Sam</strong></div></div>
-                <div class="_col col-md-4"><div class="card">Sophie (sister)</div></div>
+                <div
+                  class="_col col-md-4"
+                  data-toggle="popover"
+                  data-trigger="click"
+                  data-placement="right"
+                  data-content=""
+                >
+                  <div class="card">Hannah (sister)</div>
+                </div>
+                <div class="_col col-md-4">
+                  <div class="card"><strong>Sam</strong></div>
+                </div>
+                <div class="_col col-md-4">
+                  <div class="card">Sophie (sister)</div>
+                </div>
               </div>
               <div class="row">
-                <div class="_col col-md-6"><div class="card">Tom (dad)</div></div>
-                <div class="_col col-md-6"><div class="card">Deborah (mom)</div></div>
+                <div class="_col col-md-6">
+                  <div class="card">Tom (dad)</div>
+                </div>
+                <div class="_col col-md-6">
+                  <div class="card">Deborah (mom)</div>
+                </div>
               </div>
               <div class="row">
-                <div class="_col col-md-3"><div class="card">Joanne (grandma)</div></div>
-                <div class="_col col-md-3"><div class="card">Mort (grandpa - d)</div></div>
-                <div class="_col col-md-3"><div class="card">Mary (grandma)</div></div>
-                <div class="_col col-md-3"><div class="card">Bob (grandpa - d)</div></div>
+                <div class="_col col-md-3">
+                  <div class="card">Joanne (grandma)</div>
+                </div>
+                <div class="_col col-md-3">
+                  <div class="card">Mort (grandpa - d)</div>
+                </div>
+                <div class="_col col-md-3">
+                  <div class="card">Mary (grandma)</div>
+                </div>
+                <div class="_col col-md-3">
+                  <div class="card">Bob (grandpa - d)</div>
+                </div>
               </div>
             </div>
           </div>
@@ -52,41 +76,69 @@
             <div class="card">
               <div class="card-body">
                 <div class="card-title">
-                  <h4>Hi, Sam! You can edit your profile and family connections from here.</h4>
+                  <h4>
+                    Hi, Sam! You can edit your profile and family connections
+                    from here.
+                  </h4>
                 </div>
                 <div class="form-group">
                   <label for="age">Age</label>
-                  <input type="number" class="form-control" id="age" placeholder="28" />
+                  <input
+                    type="number"
+                    class="form-control"
+                    id="age"
+                    placeholder="28"
+                  />
                 </div>
                 <div class="form-group">
                   <label for="location">Location</label>
-                  <input type="text" class="form-control" id="location" placeholder="Washington, DC" />
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="location"
+                    placeholder="Washington, DC"
+                  />
                 </div>
                 <div class="form-group">
-                  <label for="cur-sib">Siblings</label>
+                  <label for="cur-sib">Siblings (click to remove)</label>
                   <select multiple class="form-control" id="cur-sib">
                     <option>Sophie</option>
                     <option>Hannah</option>
                   </select>
-                  <input type="text" class="form-control" id="edit-cur-sib" placeholder="Edit sibling list"/>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="edit-cur-sib"
+                    placeholder="Add to sibling list"
+                  />
                 </div>
                 <div class="form-group">
-                  <label for="cur-par">Parents</label>
+                  <label for="cur-par">Parents (click to remove)</label>
                   <select multiple class="form-control" id="cur-par">
                     <option>Tom</option>
                     <option>Deborah</option>
                   </select>
-                  <input type="text" class="form-control" id="edit-cur-par" placeholder="Edit parent list"/>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="edit-cur-par"
+                    placeholder="Add to parent list"
+                  />
                 </div>
                 <div class="form-group">
-                  <label for="cur-gp">Grandparents</label>
+                  <label for="cur-gp">Grandparents (click to remove)</label>
                   <select multiple class="form-control" id="cur-gp">
                     <option>Joanne</option>
                     <option>Mort - d</option>
                     <option>Mary</option>
                     <option>Bob - d</option>
                   </select>
-                  <input type="text" class="form-control" id="edit-cur-gp" placeholder="Edit grandparent list"/>
+                  <input
+                    type="text"
+                    class="form-control"
+                    id="edit-cur-gp"
+                    placeholder="Add to grandparent list"
+                  />
                 </div>
                 <div class="form-group">
                   <div class="btn btn-outline-secondary">Make Changes</div>
@@ -97,7 +149,6 @@
         </div>
       </div>
     </div>
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta1/dist/js/bootstrap.bundle.min.js" integrity="sha384-ygbV9kiqUc6oa4msXn9868pTtWMgiQaeYH7/t7LECLbyPA2x65Kgf80OJFdroafW" crossorigin="anonymous"></script>
     <script src="./utils.js"></script>
     <script src="./script.js"></script>
   </body>

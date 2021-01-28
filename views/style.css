@@ -1,8 +1,13 @@
-.row {
-    margin-bottom: 5px;
+a:hover{
+    cursor: pointer;
 }
 
-._col {
+.jumbotron {
+    background-color: rgba(227, 227, 227, .5);
+    margin-top: 10px;
+    border-radius: 2%;
+}
 
-
+.row {
+    margin-bottom: 5px;
 }

@@ -7,6 +7,10 @@ app.use(express.urlencoded({extended:true}))
 app.use(express.json())
 app.use(express.static('views'))
 
+app.get('/', (req, res) => {
+    res.sendFile('index')
+})
+
 app.listen(PORT, () => {
     console.log(`Listening on ${PORT}`);
 })
