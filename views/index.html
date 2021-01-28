@@ -9,39 +9,62 @@
       integrity="sha384-B0vP5xmATw1+K9KRQjQERJvTumQW0nPEzvF6L/Z6nronJ3oUOFUFpCjEUQouq2+l"
       crossorigin="anonymous"
     />
-    <link rel="stylesheet" href="style.css" />
+    <link rel="stylesheet" href="./style.css" />
     <title>Document</title>
   </head>
   <body>
+    <!-- NAVBAR -->
     <nav class="navbar navbar-expand-lg navbar-light bg-light">
       <div class="container-fluid">
         <a class="navbar-brand" id="home-button">Home</a>
-        <button
-          class="navbar-toggler"
-          type="button"
-          data-bs-toggle="collapse"
-          data-bs-target="#navbarNavAltMarkup"
-          aria-controls="navbarNavAltMarkup"
-          aria-expanded="false"
-          aria-label="Toggle navigation"
-        >
-          <span class="navbar-toggler-icon"></span>
-        </button>
         <div class="navbar-nav">
           <a class="nav-link" id="tree-button">Family Tree</a>
           <a class="nav-link" id="edit-button">Edit Profile</a>
         </div>
       </div>
     </nav>
+    <!-- CONTAINER FOR ALL CONTENT -->
     <div class="container">
       <div class="jumbotron jumbotron-fluid">
         <div class="container">
+          <!-- USER PAGE -->
           <div id="user-page">
             <h3>hello from user page</h3>
+            <div class="card">
+              <div class="card-body">
+                <div class="card-title">
+                  <h4>Hi, Sam! Welcome to your profile.</h4>
+                </div>
+                <p class="card-text"><strong>Age: </strong> 28</p>
+                <p class="card-text">
+                  <strong>Location: </strong> Washington, DC
+                </p>
+              </div>
+            </div>
+            <div id="tree" style="text-align: center;">
+              <h3>My Tree</h3>
+              <div class="row">
+                <div class="_col col-md-4"><div class="card">Hannah (sister)</div></div>
+                <div class="_col col-md-4"><div class="card">me</div></div>
+                <div class="_col col-md-4"><div class="card">Sophie (sister)</div></div>
+              </div>
+              <div class="row">
+                <div class="_col col-md-6"><div class="card">Tom (dad)</div></div>
+                <div class="_col col-md-6"><div class="card">Deborah (mom)</div></div>
+              </div>
+              <div class="row">
+                <div class="_col col-md-3"><div class="card">Joanne (grandma)</div></div>
+                <div class="_col col-md-3"><div class="card">Mort (grandpa - d)</div></div>
+                <div class="_col col-md-3"><div class="card">Mary (grandma)</div></div>
+                <div class="_col col-md-3"><div class="card">Bob (grandpa - d)</div></div>
+              </div>
+            </div>
           </div>
+          <!-- USER TREE -->
           <div id="user-tree" style="display: none">
             <h3>hello from user tree</h3>
           </div>
+          <!-- USER EDIT -->
           <div id="user-edit" style="display: none">
             <h3>hello from user edit</h3>
           </div>
