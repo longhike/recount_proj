@@ -11,3 +11,8 @@ a:hover{
 .row {
     margin-bottom: 5px;
 }
+
+._col > .card:hover {
+    cursor: pointer;
+    background-color: rgba(95, 158, 160, .3);
+}
