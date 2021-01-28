@@ -5,7 +5,7 @@ const homeButton = document.getElementById("home-button");
 const treeButton = document.getElementById("tree-button");
 const editButton = document.getElementById("edit-button");
 
-const cols = document.getElementsByClassName("_col")
+const cols = document.getElementsByClassName("_col");
 
 homeButton.addEventListener("click", (e) => {
   e.preventDefault();
@@ -28,9 +28,23 @@ for (let i = 0; i < cols.length; i++) {
 
 function handlePopUp(div) {
   if (div.textContent !== undefined) {
-    current = div.textContent.split(" ")[0];
+    const current = div.textContent.split(" ")[0];
     if (current in famObj) {
-      alert(famObj[current].siblings);
+      alert(parseFam(famObj[current]));
     }
   }
+}
+
+function parseFam(famObj) {
+  return `
+        CHILDREN: ${
+          famObj.children.length > 0 ? famObj.children.join(", ") : "None listed"
+        } \n
+        SIBLINGS: ${
+          famObj.siblings.length > 0 ? famObj.siblings.join(", ") : "None listed"
+        } \n
+        PARENTS: ${
+          famObj.parents.length > 0 ? famObj.parents.join(", ") : "None listed"
+        }
+    `;
 }
